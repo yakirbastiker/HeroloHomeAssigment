@@ -222,12 +222,12 @@ body {
       align-self: center; } }
 
 .bg-img {
-  background-image: url("/img/Background.png");
+  background-image: url("dist/img/Background.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(118%); }
   @media only screen and (max-width: 47.5em) {
     .bg-img {
-      background-image: url("/img/metro-ui-weather-design-mobile.jpg");
+      background-image: url("dist/img/metro-ui-weather-design-mobile.jpg");
       background-position: top; } }
