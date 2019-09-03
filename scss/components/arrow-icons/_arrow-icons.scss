@@ -1,0 +1,18 @@
+.arrow-icons {
+    align-self: flex-end;
+
+    @include respond(phone) { 
+        order: 3;
+        align-self: center;
+        height: 5%;
+    }
+   
+}
+
+#arrow-right {
+    width: 2rem;
+
+    @include respond(phone) { 
+        transform: rotate(90deg);
+    }
+}

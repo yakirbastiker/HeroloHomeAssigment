@@ -1,0 +1,13 @@
+.bg-img {
+    background-image: url("/img/Background.png");
+    
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(118%);
+
+    @include respond(phone) { 
+        background-image: url("/img/metro-ui-weather-design-mobile.jpg");
+        background-position: top;
+    }
+}

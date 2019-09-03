@@ -1,0 +1,204 @@
+.box-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+    @include respond(phone) { 
+        flex-direction: column;
+        height: 90%;
+        
+    }
+
+    &__today {
+        flex-basis: 20%;
+        padding: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-port) { 
+            flex-basis: 17%;
+            padding: 1.8rem;
+        }
+
+        @include respond(phone) {
+
+            align-items: baseline;
+            height: 20%;
+            margin-bottom: 2rem;         
+        }
+        
+        &--city {
+            flex-basis: 30%;
+
+            
+
+            &--title {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 2.5rem;
+
+            @include respond(phone) { 
+                font-size: 3rem;
+            }
+
+            }
+
+            &--today {
+                font-size: 1.8rem;
+                color:#8C9BDC;
+                font-weight: lighter;
+            }
+
+        }
+
+        
+
+        &--degreesBox {
+
+            flex-basis: 50%;
+            
+            
+            &--degrees {
+                font-size: 8rem;
+                font-weight: 200;
+                letter-spacing: 3px;
+                font-family: sans-serif;
+                
+                @include respond (tab-land) {
+        
+                    font-size: 7rem;
+                }
+
+                @include respond(tab-port) { 
+                    font-size: 6rem;
+                }
+
+                @include respond(phone) { 
+                    font-size: 5rem;
+                }
+
+                &--word {
+                    
+                    font-size: 2rem;
+                    letter-spacing: 1px;
+                    font-weight: lighter;
+                    
+                }
+            }
+
+        }
+
+    }
+
+
+    &__anotherDay {
+        
+        flex-basis: 22.5%;
+        padding: 2rem;
+        background: $color-card;
+        border: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+
+        @include respond(tab-port) { 
+            flex-basis: 20%;
+            padding: 1.8rem;
+        }
+
+        @include respond(phone) { 
+
+            padding: 1rem;
+            height: 20%;
+
+            margin-bottom: 2rem; 
+        }
+        
+
+        &--theday {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: 58px;
+            font-weight: 400;
+            color: $color-words;
+            font-family: 'PT Sans', sans-serif;
+            flex-basis: 10%;
+
+            @include respond(phone) { 
+                font-size: 1.5rem;
+            }
+        }
+
+        &--degreesBox {
+
+            
+            flex-basis: 20%;
+
+            &--degrees {
+                font-size: 6rem;
+                line-height: 58px;
+                
+                color: $color-words;
+                font-weight: 100;
+                
+                @include respond (tab-land) {       
+                    font-size: 5rem;
+                }
+
+                @include respond(tab-port) { 
+                    font-size: 4rem;
+                }
+
+                @include respond(phone) { 
+                    font-size: 3rem;
+                }
+
+                &--word {
+                    font-size: 1.6rem;
+                    font-weight: lighter;
+                    
+                    @include respond(phone) { 
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+
+        &--iconBox {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+
+            &--icon {
+                width: 55%;
+                height: 90%;
+
+                @include respond (tab-land) {                  
+                    height: 80%;
+                }
+
+                @include respond(tab-port) { 
+                    height: 70%;                   
+                }
+                
+
+                @include respond(phone) {                    
+                    max-width: 100%; 
+                    min-height: 100px;
+                    max-height: 100px;
+                }
+            }
+            
+        }
+    }
+
+
+}
+
